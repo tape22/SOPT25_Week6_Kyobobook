@@ -13,7 +13,7 @@ router.get('/:username',async(req,res)=>{
             {
                 "bookname":"호준이형 안드존잘",
                 "author" :"호준이형",
-            "bookcover":"C:/Users/USER/Documents/Server_Android/public/images/11.jpg",
+            "bookcover":"Server_Android/week6/public/images/11.jpg",
             "star":"1",
                 "scrap":"TRUE"
             },
@@ -21,7 +21,7 @@ router.get('/:username',async(req,res)=>{
             {
                 "bookname":"호준이형 안드존잘(오해의 소지가 있음)",
                 "author" :"호준이형",
-            "bookcover":"C:/Users/USER/Documents/Server_Android/public/images/11.jpg",
+            "bookcover":"Server_Android/week6/public/images/11.jpg",
             "star":"4.9",
             "scrap":"TRUE"
             }

@@ -12,21 +12,21 @@ router.get('/',async(req,res)=>{
             {
                 "bookname":"집에 가고싶다",
                "author" :"허정민",
-               "bookcover":"C:/Users/USER/Documents/Server_Android/public/images/11.jpg",
+               "bookcover":"Server_Android/week6/public/images/11.jpg",
                "star":"4.3",
                 "scrap": "TRUE"
             },
             {
                 "bookname":"집에 가고싶다2",
                "author" :"허정민",
-               "bookcover":"C:/Users/USER/Documents/Server_Android/public/images/11.jpg",
+               "bookcover":"Server_Android/week6/public/images/11.jpg",
                "star":"4.3",
                 "scrap":"FALSE"
             },
             {
                 "bookname":"집에 가고싶다3",
                "author" :"허정민",
-               "bookcover":"C:/Users/USER/Documents/Server_Android/public/images/11.jpg",
+               "bookcover":"Server_Android/week6/public/images/11.jpg",
                "star":"4.3",
                 "scrap":"FALSE"
             }

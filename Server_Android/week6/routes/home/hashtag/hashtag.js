@@ -10,7 +10,7 @@ router.post('/',async(req,res)=>{
         const {username} = req.body;
         const message =username+"랜덤 해시태그!";
         const response_hash = [
-            {"image": "C:/Users/USER/Documents/Server_Android/week6/public/images/cat.JPG", 
+            {"image": "Server_Android/week6/public/images/cat.JPG", 
             "main_keyword": "라랄라/맛집 추천해줘요", 
             "keywords": "#배고파 #술마시고 싶어 #학교가기싫어 #으아아앙아아ㅏ #서팟장님 쿼카" }
         ]
