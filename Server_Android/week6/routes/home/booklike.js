@@ -4,7 +4,7 @@ const router = express.Router();
 const auth = require('../../module/util/authUtil');
 
 
-// 내 취향 책 어쩌구(home상단) 조회하기
+// 내 취향 책 어쩌구(home상단) 조회하기 localhost:3000/home/book/내이름
 router.get('/:username',async(req,res)=>{
     try{
         const {username} = req.params;
