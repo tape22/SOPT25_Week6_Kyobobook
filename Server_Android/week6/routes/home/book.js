@@ -7,9 +7,31 @@ const auth = require('../../module/util/authUtil');
 // 책장 속의 발견(home상단) 조회하기
 router.get('/',async(req,res)=>{
     try{
-        const library = req.params;
-        console.log(library);
-        res.status(200).send();
+        const message ="책장 속의 발견 성공!";
+        const data = [
+            {
+                "bookName":"집에 가고싶다",
+               "author" :"허정민",
+               "bookCover":"C:/Users/USER/Documents/Server_Android/public/images/11.jpg",
+               "star":"4.3",
+                "scrap": "TRUE"
+            },
+            {
+                "bookName":"집에 가고싶다2",
+               "author" :"허정민",
+               "bookCover":"C:/Users/USER/Documents/Server_Android/public/images/11.jpg",
+               "star":"4.3",
+                "scrap":"FALSE"
+            },
+            {
+                "bookName":"집에 가고싶다3",
+               "author" :"허정민",
+               "bookCover":"C:/Users/USER/Documents/Server_Android/public/images/11.jpg",
+               "star":"4.3",
+                "scrap":"FALSE"
+            }
+        ]
+        res.status(200).send(auth.successTrue(message,data));
 
     }catch(err){
         res.status(500).send('error');
