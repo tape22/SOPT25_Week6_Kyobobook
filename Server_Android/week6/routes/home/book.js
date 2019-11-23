@@ -8,30 +8,30 @@ const auth = require('../../module/util/authUtil');
 router.get('/',async(req,res)=>{
     try{
         const message ="책장 속의 발견 성공!";
-        const data = [
+        const response_library = [
             {
-                "bookName":"집에 가고싶다",
+                "bookname":"집에 가고싶다",
                "author" :"허정민",
-               "bookCover":"C:/Users/USER/Documents/Server_Android/public/images/11.jpg",
+               "bookcover":"C:/Users/USER/Documents/Server_Android/public/images/11.jpg",
                "star":"4.3",
                 "scrap": "TRUE"
             },
             {
-                "bookName":"집에 가고싶다2",
+                "bookname":"집에 가고싶다2",
                "author" :"허정민",
-               "bookCover":"C:/Users/USER/Documents/Server_Android/public/images/11.jpg",
+               "bookcover":"C:/Users/USER/Documents/Server_Android/public/images/11.jpg",
                "star":"4.3",
                 "scrap":"FALSE"
             },
             {
-                "bookName":"집에 가고싶다3",
+                "bookname":"집에 가고싶다3",
                "author" :"허정민",
-               "bookCover":"C:/Users/USER/Documents/Server_Android/public/images/11.jpg",
+               "bookcover":"C:/Users/USER/Documents/Server_Android/public/images/11.jpg",
                "star":"4.3",
                 "scrap":"FALSE"
             }
         ]
-        res.status(200).send(auth.successTrue(message,data));
+        res.status(200).send(auth.successTrue(message,response_library));
 
     }catch(err){
         res.status(500).send('error');

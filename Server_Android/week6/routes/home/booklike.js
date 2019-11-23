@@ -9,24 +9,24 @@ router.get('/:username',async(req,res)=>{
     try{
         const {username} = req.params;
         const message =username+"의 취향이 비슷한 사람의 책 조회 성공!";
-        const data = [
+        const response_taste = [
             {
-                "bookName":"호준이형 안드존잘",
+                "bookname":"호준이형 안드존잘",
                 "author" :"호준이형",
-            "bookCover":"C:/Users/USER/Documents/Server_Android/public/images/11.jpg",
+            "bookcover":"C:/Users/USER/Documents/Server_Android/public/images/11.jpg",
             "star":"1",
                 "scrap":"TRUE"
             },
     
             {
-                "bookName":"호준이형 안드존잘(오해의 소지가 있음)",
+                "bookname":"호준이형 안드존잘(오해의 소지가 있음)",
                 "author" :"호준이형",
-            "bookCover":"C:/Users/USER/Documents/Server_Android/public/images/11.jpg",
+            "bookcover":"C:/Users/USER/Documents/Server_Android/public/images/11.jpg",
             "star":"4.9",
             "scrap":"TRUE"
             }
         ]
-        res.status(200).send(auth.successTrue(message,data));
+        res.status(200).send(auth.successTrue(message,response_taste));
 
     }catch(err){
         res.status(500).send('error');
