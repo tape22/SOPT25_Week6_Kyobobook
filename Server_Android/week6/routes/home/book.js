@@ -10,26 +10,26 @@ router.post('/',async(req,res)=>{
         const {category} = req.body;
         if (category == "library"){
             const message ="책장 속의 발견 성공!";
-        const response_library = [
+            const response_library = [
             {
                 "bookname":"집에 가고싶다1",
-               "author" :"허정민",
-               "bookcover":"Server_Android/week6/public/images/11.jpg",
-               "star":"4.3",
+                "author" :"허정민",
+                "bookcover":"Server_Android/week6/public/images/11.jpg",
+                "star":"4.3",
                 "scrap": "TRUE"
             },
             {
                 "bookname":"집에 가고싶다2",
-               "author" :"허정민",
-               "bookcover":"Server_Android/week6/public/images/11.jpg",
-               "star":"4.3",
+                "author" :"허정민",
+                "bookcover":"Server_Android/week6/public/images/cat.jpg",
+                "star":"4.3",
                 "scrap":"FALSE"
             },
             {
                 "bookname":"집에 가고싶다3",
-               "author" :"허정민",
-               "bookcover":"Server_Android/week6/public/images/11.jpg",
-               "star":"4.3",
+                "author" :"허정민",
+                "bookcover":"Server_Android/week6/public/images/Roma.jpg",
+                "star":"4.3",
                 "scrap":"FALSE"
             }
         ]
