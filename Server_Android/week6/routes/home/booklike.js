@@ -11,18 +11,26 @@ router.get('/:username',async(req,res)=>{
         const message =username+"의 취향이 비슷한 사람의 책 조회 성공!";
         const response_taste = [
             {
-                "bookname":"호준이형 안드존잘",
-                "author" :"호준이형",
-            "bookcover":"Server_Android/week6/public/images/11.jpg",
-            "star":"1",
+                "bookname":"엄마를 부탁해",
+                "author" :"신경숙",
+            "bookcover":"Shttp://image.kyobobook.co.kr/images/book/xlarge/673/x9788936433673.jpg",
+            "star":"4",
                 "scrap":"TRUE"
             },
     
             {
-                "bookname":"호준이형 안드존잘(오해의 소지가 있음)",
-                "author" :"호준이형",
-            "bookcover":"Server_Android/week6/public/images/11.jpg",
-            "star":"4.9",
+                "bookname":"소프트웨어 공학",
+                "author" :"Ian Sommerville",
+            "bookcover":"http://image.kyobobook.co.kr/images/book/xlarge/660/x9788964212660.jpg",
+            "star":"4.1",
+            "scrap":"FALSE"
+            },
+
+            {
+                "bookname":"멋진 신세계",
+                "author" :"올더스 헉슬리",
+            "bookcover":"http://image.kyobobook.co.kr/images/book/xlarge/581/x9788931003581.jpg",
+            "star":"4.6",
             "scrap":"TRUE"
             }
         ]

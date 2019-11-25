@@ -12,23 +12,23 @@ router.post('/',async(req,res)=>{
             const message ="책장 속의 발견 성공!";
             const response_library = [
             {
-                "bookname":"집에 가고싶다1",
-                "author" :"허정민",
-                "bookcover":"Server_Android/week6/public/images/11.jpg",
-                "star":"4.3",
+                "bookname":"진이, 지니",
+                "author" :"정유정",
+                "bookcover":"http://image.yes24.com/Goods/73417149/800x0",
+                "star":"4.9",
                 "scrap": "TRUE"
             },
             {
-                "bookname":"집에 가고싶다2",
-                "author" :"허정민",
-                "bookcover":"Server_Android/week6/public/images/cat.jpg",
+                "bookname":"뉴스가 들리고 기사가 읽히는 세상 친절한 경제상식",
+                "author" :"토리텔러",
+                "bookcover":"http://image.kyobobook.co.kr/images/book/large/110/l9788959896110.jpg",
                 "star":"4.3",
                 "scrap":"FALSE"
             },
             {
-                "bookname":"집에 가고싶다3",
-                "author" :"허정민",
-                "bookcover":"Server_Android/week6/public/images/Roma.jpg",
+                "bookname":"이기적 유전자",
+                "author" :"리처드 도킨스",
+                "bookcover":"http://image.kyobobook.co.kr/images/book/xlarge/901/x9788932473901.jpg",
                 "star":"4.3",
                 "scrap":"FALSE"
             }
