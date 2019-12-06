@@ -8,11 +8,11 @@ const auth = require('../../../module/util/authUtil');
 router.post('/',async(req,res)=>{
     try{
         const {username} = req.body;
-        const message =username+"랜덤 해시태그!";
+        const message =username+"랜덤 해시태그";
         const response_hash = [
-            {"image": "Server_Android/week6/public/images/cat.JPG", 
-            "main_keyword": "라랄라/맛집 추천해줘요", 
-            "keywords": "#배고파 #술마시고 싶어 #학교가기싫어 #으아아앙아아ㅏ #서팟장님 쿼카" }
+            {"image": "https://pds.joins.com/news/component/htmlphoto_mmdata/201904/05/8c5dbe76-9a59-41dd-90a2-87e9433f2116.jpg", 
+            "main_keyword": "등불/페스티벌", 
+            "keywords": "#감성 #축제 #연말 페스티벌 #가족,애인,친구와 같이" }
         ]
         res.status(200).send(auth.successTrue(message,response_hash));
 

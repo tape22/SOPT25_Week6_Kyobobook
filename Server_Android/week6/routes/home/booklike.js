@@ -1,8 +1,10 @@
 //{"usernmae": "lee"} req로 오면 home의 book.json res하고 send.("ok")
 const express = require('express');
 const router = express.Router();
-const auth = require('../../module/util/authUtil');
-
+const statusCode = require('../../../module/statusCode');
+const responseMessage = require('../../../module/responseMessage');
+const authUtil = require('../../../module/authUtil');
+const Books = require('../../../model/books');
 
 // 내 취향 책 어쩌구(home상단) 조회하기 localhost:3000/home/book/내이름
 router.get('/:username',async(req,res)=>{
@@ -34,7 +36,7 @@ router.get('/:username',async(req,res)=>{
             "scrap":"TRUE"
             }
         ]
-        res.status(200).send(auth.successTrue(message,response_taste));
+        res.status(200).send(authUtil.successTrue(message,response_taste));
 
     }catch(err){
         res.status(500).send('error');
