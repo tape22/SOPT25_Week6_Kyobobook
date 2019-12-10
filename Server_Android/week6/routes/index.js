@@ -5,6 +5,6 @@ var router = express.Router();
 
 
 router.use('/home',require('./home'));
-//router.use('/mypage',require('./mypage'));
+router.use('/mypage',require('./mypage'));
 
 module.exports = router;

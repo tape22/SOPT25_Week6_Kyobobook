@@ -1,10 +1,11 @@
 //req로 username (post) 받으면 
 const express = require('express');
 const router = express.Router();
-const auth = require('../../../module/util/authUtil');
+const auth = require('../../../module/authUtil');
+const statusCode = require('../../../module/statusCode');
+const responseMessage = require('../../../module/responseMessage');
 
-
-// 해시태그 랜덤랜덤~
+// 해시태그는 그냥 DB로 안빼고 둘까 함.(합의는 안됨)
 router.post('/',async(req,res)=>{
     try{
         const {username} = req.body;
@@ -17,7 +18,7 @@ router.post('/',async(req,res)=>{
         res.status(200).send(auth.successTrue(message,response_hash));
 
     }catch(err){
-        res.status(500).send('error');
+        res.status(statusCode.INTERNAL_SERVER_ERROR).send(authUtil.successFalse(responseMessage.INTERNAL_SERVER_ERROR)); 
         console.log(err);
         return;
     }

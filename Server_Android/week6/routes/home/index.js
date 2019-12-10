@@ -5,6 +5,6 @@ var router = express.Router();
 //localhost:3000/home이 기본 값인 상태
 router.use('/book',require('./book'));
 router.use('/booklike',require('./booklike'));
-router.use('/hashtag',require('./hashtag/hashtag'));
+router.use('/hashtag',require('./hashtag'));
 
 module.exports = router;
