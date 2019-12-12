@@ -11,16 +11,14 @@ router.post('/:username', async(req,res)=>{
     const {username} = req.params;
     console.log({username});
 
-    // username 값이 있는지 확인
+    // username 값이 들어왔는지 확인
     if(!username){
-        res.status(statusCode.BAD_REQUEST)
-        .send(authUtil.successFalse(responseMessage.NULL_VALUE));
+        res.status(statusCode.BAD_REQUEST).send(authUtil.successFalse(responseMessage.NULL_VALUE));
     }
-    //username이 DB에 있는 값과 일치하는지 확인(12.10)
     
     // 값 불러오기
     try{
-        const {code,json} = await Booklike.selectAll();
+        const {code,json} = await Booklike.selectAll({username});
         res.status(code).send(json);
     }catch(err){
         console.log(err);

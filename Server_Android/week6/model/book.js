@@ -17,8 +17,8 @@ module.exports ={
         }
         console.log(result);
         return{
-            code:statusCode.OK,
-            json:authUtil.successTrue(responseMessage.BOOK_READ_ALL_SUCCESS,result)
+            code: statusCode.OK,
+            json: authUtil.successTrue(responseMessage.BOOK_READ_ALL_SUCCESS,result)
             
         };
     }

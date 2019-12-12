@@ -5,7 +5,7 @@ const responseMessage = require('../../../module/responseMessage');
 const authUtil = require('../../../module/authUtil');
 const Mybook = require('../../../model/mybook');
 
-// 나의 책 리스트 조회
+// 내 서재 조회
 router.post('/:username', async(req,res)=>{
     const {username} = req.params;
     console.log({username});
@@ -15,11 +15,10 @@ router.post('/:username', async(req,res)=>{
         res.status(statusCode.BAD_REQUEST)
         .send(authUtil.successFalse(responseMessage.NULL_VALUE));
     }
-    //username이 일치하는지 확인
-    
+
     // 값 불러오기
     try{
-        const {code,json} = await Mybook.selectAll();
+        const {code,json} = await Mybook.selectAll({username});
         res.status(code).send(json);
     }catch(err){
         console.log(err);

@@ -3,6 +3,6 @@ var express = require('express');
 var router = express.Router();
 
 //localhost:3000/home/hashtag 부터 시작!
-router.use('/hashtag',require('./hashtag'));
+router.use('/',require('./hashtag'));
 
 module.exports = router;
