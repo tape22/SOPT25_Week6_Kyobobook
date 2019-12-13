@@ -13,7 +13,7 @@ module.exports ={
         
       
         //username이 DB에 있는 값과 일치하는지 확인-> 아직 못함.
-        if(!result){
+        if(result.length == 0){
             return{
                 code: statusCode.BAD_REQUEST,
                 json: authUtil.successFalse(responseMessage.MYBOOK_READ_ALL_FAIL)

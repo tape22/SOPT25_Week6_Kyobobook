@@ -4,6 +4,7 @@ const authUtil = require('../module/authUtil');
 const pool = require('../module/pool');
 // 책장속 발견 
 const table = 'book';
+
 module.exports ={
     selectAll : async() =>{
         const query= `SELECT * FROM ${table}`;
@@ -15,7 +16,7 @@ module.exports ={
                 json:authUtil.successFalse(responseMessage.BOOK_READ_ALL_FAIL)
             };
         }
-        console.log(result);
+        
         return{
             code: statusCode.OK,
             json: authUtil.successTrue(responseMessage.BOOK_READ_ALL_SUCCESS,result)

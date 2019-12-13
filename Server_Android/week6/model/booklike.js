@@ -7,28 +7,22 @@ const pool = require('../module/pool');
 const table = 'booklike';
 module.exports ={
     selectAll : async({username}) =>{
-    
-        const query= `SELECT * FROM ${table} WHERE username = '${username}'`;
-        const result = await pool.queryParam_None(query);
-
-        // var test = result.filter(function(te){
-        //     return te.username == "jungmin"
-        // });
-
-        // console.log(test[0].username);
-
-        //username이 DB에 있는 값과 일치하는지 확인-> 아직 구현 못함.
-        if(!result){
+        const user = `'${username}'`;
+        const result = await pool.queryParam_None(`SELECT * FROM ${table} WHERE username = ${user}`);
+       
+        if(result.length == 0){
             return{
                 code: statusCode.BAD_REQUEST,
                 json: authUtil.successFalse(responseMessage.BOOKLIKE_READ_ALL_FAIL)
             };
-        }
-
-        return{
+        }else{
+            return{
             code:statusCode.OK,
             json:authUtil.successTrue(responseMessage.BOOKLIKE_READ_ALL_SUCCESS,result)
             
         };
+        }
+
+        
     }
 }
