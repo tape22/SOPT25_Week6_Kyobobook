@@ -8,9 +8,8 @@
  3. 나의 책 리스트
  4. 서재에서 메인 책 화면
  
-![1번 화면]<img src="https://user-images.githubusercontent.com/35520314/70772886-3bf09800-1db9-11ea-96e8-342ea774239c.png" width="40%">
-
-![2번 화면]<img src="https://user-images.githubusercontent.com/35520314/70772887-3d21c500-1db9-11ea-99fc-453b26668bc4.png" width="40%">
+<div><img src="https://user-images.githubusercontent.com/35520314/70772886-3bf09800-1db9-11ea-96e8-342ea774239c.png" width="40%">
+<img src="https://user-images.githubusercontent.com/35520314/70772887-3d21c500-1db9-11ea-99fc-453b26668bc4.png" width="40%"></div>
 
 
 ### Dependencies
