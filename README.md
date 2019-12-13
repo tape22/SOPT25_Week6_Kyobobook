@@ -7,8 +7,10 @@
  2. 취향이 비슷한 사람들
  3. 나의 책 리스트
  4. 서재에서 메인 책 화면
-![KakaoTalk_20191123_153331938](https://user-images.githubusercontent.com/35520314/70772886-3bf09800-1db9-11ea-96e8-342ea774239c.png){: width="300" height="300"}
-![KakaoTalk_20191123_153407707](https://user-images.githubusercontent.com/35520314/70772887-3d21c500-1db9-11ea-99fc-453b26668bc4.png){: width="300" height="300"}
+ 
+![1번 화면]<img src="https://user-images.githubusercontent.com/35520314/70772886-3bf09800-1db9-11ea-96e8-342ea774239c.png" width="40%">
+
+![2번 화면]<img src="https://user-images.githubusercontent.com/35520314/70772887-3d21c500-1db9-11ea-99fc-453b26668bc4.png" width="40%">
 
 
 ### Dependencies
@@ -29,7 +31,7 @@
 
 ### API Documents
 -----------------------------------
-(https://github.com/tape22/SOPT25_Week6_Kyobobook/wiki)
+[교보문고 API Wiki](https://github.com/tape22/SOPT25_Week6_Kyobobook/wiki)
 
 
 ### Demo
