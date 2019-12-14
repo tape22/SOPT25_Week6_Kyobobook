@@ -40,14 +40,16 @@
 ## :busts_in_silhouette: About Team
 -----------------------------------
 
-##### Server
+#### Server
 - 허정민
 - 최영훈
-##### Client(Android)
+#### Client(Android)
 - 최호준
 - 김예진
 - 정은이
 - 조현아
+- 김지현
 
 #### Designer
-- 김지현
+- 유형일
+- 이성민
