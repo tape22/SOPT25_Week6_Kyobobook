@@ -7,7 +7,7 @@ const authUtil = require('../../../module/authUtil');
 const Booklike = require('../../../model/booklike');
 
 // 취향이 비슷한 사람들 조회하기
-router.post('/:username', async(req,res)=>{
+router.get('/:username', async(req,res)=>{
     const {username} = req.params;
     console.log({username});
 
